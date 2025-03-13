@@ -13,6 +13,8 @@ except:
 
 # Create dataset folder structure
 IMG_SAVE_PATH = "dataset"
+if not os.path.exists(IMG_SAVE_PATH):
+    os.makedirs(IMG_SAVE_PATH, exist_ok=True)
 IMG_CLASS_PATH = os.path.join(IMG_SAVE_PATH, label_name)
 
 os.makedirs(IMG_SAVE_PATH, exist_ok=True)
